@@ -1,28 +1,22 @@
 # ========================================
 # ETAPA 1: BUILD (Compilación)
 # ========================================
+FROM eclipse-temurin:17-jdk-alpine AS build
 
-FROM alpine:latest as build
-
-RUN apk update
-
-
-RUN apk add openjdk17
+WORKDIR /app
 
 COPY . .
 
 RUN chmod +x ./gradlew
-
 RUN ./gradlew bootJar --no-daemon
 
 # ========================================
 # ETAPA 2: RUNTIME (Ejecución)
 # ========================================
-
-FROM openjdk:17-alpine
+FROM eclipse-temurin:17-jre-alpine
 
 EXPOSE 8080
 
-COPY --from=build ./build/libs/Mutantes-1.0-SNAPSHOT.jar ./app.jar
+COPY --from=build /app/build/libs/mutant-detector-0.0.1-SNAPSHOT.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
