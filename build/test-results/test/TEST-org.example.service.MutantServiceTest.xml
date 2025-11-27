@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.service.MutantServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-24T20:08:58" hostname="PRECISION" time="0.471">
+  <properties/>
+  <testcase name="analyzeDna_shouldAnalyzeAndSaveDna_whenDnaIsNotVerified()" classname="org.example.service.MutantServiceTest" time="0.462"/>
+  <testcase name="analyzeDna_shouldReturnCachedResult_whenDnaIsAlreadyVerified()" classname="org.example.service.MutantServiceTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

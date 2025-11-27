@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.service.MutantDetectorTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2025-11-24T20:08:58" hostname="PRECISION" time="0.058">
+  <properties/>
+  <testcase name="isMutant_shouldReturnFalse_forEmptyDna()" classname="org.example.service.MutantDetectorTest" time="0.016"/>
+  <testcase name="isMutant_shouldReturnTrue_whenHorizontalAndVerticalSequencesExist()" classname="org.example.service.MutantDetectorTest" time="0.004"/>
+  <testcase name="isMutant_shouldReturnFalse_withNullRow()" classname="org.example.service.MutantDetectorTest" time="0.003"/>
+  <testcase name="isMutant_shouldReturnTrue_forDiagonalInCorner()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnFalse_whenOnlyOneSequenceExists()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnTrue_forLargeDnaWithMutantSequences()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnTrue_whenDiagonalSequencesExist()" classname="org.example.service.MutantDetectorTest" time="0.002"/>
+  <testcase name="isMutant_shouldReturnFalse_forTooSmallDna()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnFalse_forNullDna()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnFalse_forInvalidCharacters()" classname="org.example.service.MutantDetectorTest" time="0.0"/>
+  <testcase name="isMutant_shouldReturnFalse_whenSequenceIsLongerThanFour()" classname="org.example.service.MutantDetectorTest" time="0.002"/>
+  <testcase name="isMutant_shouldReturnTrue_whenMultipleHorizontalSequencesExist()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnFalse_whenNoSequencesExist()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnTrue_whenAllSameCharacter()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnTrue_whenAscendingDiagonalSequencesExist()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnTrue_whenMultipleVerticalSequencesExist()" classname="org.example.service.MutantDetectorTest" time="0.001"/>
+  <testcase name="isMutant_shouldReturnFalse_forNonSquareMatrix()" classname="org.example.service.MutantDetectorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
