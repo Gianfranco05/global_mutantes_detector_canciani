@@ -1,7 +1,7 @@
 # ========================================
 # ETAPA 1: BUILD (Compilación)
 # ========================================
-FROM gradle:jdk17-alpine AS build
+FROM gradle:8.8-jdk17-alpine AS build
 
 WORKDIR /app
 
