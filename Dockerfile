@@ -1,14 +1,13 @@
 # ========================================
 # ETAPA 1: BUILD (Compilación)
 # ========================================
-FROM eclipse-temurin:17-jdk-alpine AS build
+FROM gradle:jdk17-alpine AS build
 
 WORKDIR /app
 
 COPY . .
 
-RUN chmod +x ./gradlew
-RUN ./gradlew bootJar --no-daemon
+RUN gradle bootJar --no-daemon
 
 # ========================================
 # ETAPA 2: RUNTIME (Ejecución)
